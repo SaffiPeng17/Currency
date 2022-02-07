@@ -16,6 +16,8 @@
 		04B0EDD927A195140031B8C6 /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0EDD827A195140031B8C6 /* CurrencyTests.swift */; };
 		04B0EDE327A195140031B8C6 /* CurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0EDE227A195140031B8C6 /* CurrencyUITests.swift */; };
 		04B0EDE527A195140031B8C6 /* CurrencyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0EDE427A195140031B8C6 /* CurrencyUITestsLaunchTests.swift */; };
+		04BD2E1527B1B25700AE643A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD2E1427B1B25700AE643A /* LoadingView.swift */; };
+		04BD2E1C27B1BD0100AE643A /* 65705-spinner.json in Resources */ = {isa = PBXBuildFile; fileRef = 04BD2E1B27B1BD0100AE643A /* 65705-spinner.json */; };
 		04FE81E827A1BB9D00EC5334 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE81E727A1BB9D00EC5334 /* BaseViewController.swift */; };
 		04FE81EA27A1BC5500EC5334 /* MainViewControllerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE81E927A1BC5500EC5334 /* MainViewControllerVM.swift */; };
 		04FE81ED27A1BDB600EC5334 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE81EC27A1BDB600EC5334 /* ApiService.swift */; };
@@ -70,6 +72,8 @@
 		04B0EDDE27A195140031B8C6 /* CurrencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B0EDE227A195140031B8C6 /* CurrencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyUITests.swift; sourceTree = "<group>"; };
 		04B0EDE427A195140031B8C6 /* CurrencyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04BD2E1427B1B25700AE643A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		04BD2E1B27B1BD0100AE643A /* 65705-spinner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "65705-spinner.json"; sourceTree = "<group>"; };
 		04FE81E727A1BB9D00EC5334 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		04FE81E927A1BC5500EC5334 /* MainViewControllerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerVM.swift; sourceTree = "<group>"; };
 		04FE81EC27A1BDB600EC5334 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
@@ -161,7 +165,7 @@
 				04FE81F427A1CA5000EC5334 /* Database */,
 				04FE81E527A1BB4D00EC5334 /* CustomViews */,
 				04FE81E427A19FD400EC5334 /* ViewControllers */,
-				04FE81E327A19F5C00EC5334 /* Storyboards */,
+				04BD2E1627B1B2B600AE643A /* Resources */,
 				04B0EDCA27A195140031B8C6 /* Assets.xcassets */,
 				04B0EDCF27A195140031B8C6 /* Info.plist */,
 			);
@@ -183,6 +187,23 @@
 				04B0EDE427A195140031B8C6 /* CurrencyUITestsLaunchTests.swift */,
 			);
 			path = CurrencyUITests;
+			sourceTree = "<group>";
+		};
+		04BD2E1627B1B2B600AE643A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04FE81E327A19F5C00EC5334 /* Storyboards */,
+				04BD2E1727B1B2DB00AE643A /* Lottie */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04BD2E1727B1B2DB00AE643A /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				04BD2E1B27B1BD0100AE643A /* 65705-spinner.json */,
+			);
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 		04FE81E327A19F5C00EC5334 /* Storyboards */ = {
@@ -207,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				04FE81E627A1BB6100EC5334 /* Base */,
+				04BD2E1427B1B25700AE643A /* LoadingView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -434,6 +456,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BD2E1C27B1BD0100AE643A /* 65705-spinner.json in Resources */,
 				04B0EDCE27A195140031B8C6 /* LaunchScreen.storyboard in Resources */,
 				04B0EDCB27A195140031B8C6 /* Assets.xcassets in Resources */,
 				04B0EDC927A195120031B8C6 /* Main.storyboard in Resources */,
@@ -567,6 +590,7 @@
 				04FE820D27A53D7100EC5334 /* CurrencyCell.swift in Sources */,
 				04FE820127A2DDD200EC5334 /* CurrencyObject.swift in Sources */,
 				04FE822127B11A8200EC5334 /* ChartViewControllerVM.swift in Sources */,
+				04BD2E1527B1B25700AE643A /* LoadingView.swift in Sources */,
 				04FE822727B1239400EC5334 /* ChartAxisValueFormatter.swift in Sources */,
 				04FE81FA27A1CE2C00EC5334 /* CurrencyModel.swift in Sources */,
 				04FE81ED27A1BDB600EC5334 /* ApiService.swift in Sources */,

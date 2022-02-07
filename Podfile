@@ -14,6 +14,7 @@ target 'Currency' do
   pod 'RealmSwift'
   pod 'RxRealm'
   pod 'Charts'
+  pod 'lottie-ios'
 
   target 'CurrencyTests' do
     inherit! :search_paths

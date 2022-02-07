@@ -140,7 +140,7 @@ private extension DataAccessManager {
                         return
                     }
                     self?.updateCurrency(objects: objects)
-                    observer.onNext(())
+                    observer.onCompleted()
                 } onError: { error in
                     observer.onError(error)
                 }.disposed(by: self.disposeBag)

@@ -38,10 +38,12 @@ class MainViewController: BaseCoreViewController {
     override func setupBinding() {
         super.setupBinding()
 
+        LoadingView.shared.show()
         viewModel.output.reloadData
             .observe(on: MainScheduler.instance)
             .subscribe { [weak self] _ in
                 self?.tableView.reloadData()
+                LoadingView.shared.hide()
             }.disposed(by: self.disposeBag)
     }
 }
