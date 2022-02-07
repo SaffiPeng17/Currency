@@ -92,6 +92,18 @@ extension DataAccessManager {
         return Array(objects.prefix(fetchCounts))
     }
 
+    func getWeekCurrency(name: String, date: Date) -> [CurrencyObject]? {
+        let predicate = "currency = '\(name)'"
+        guard let result = self.realmDAO.read(type: CurrencyObject.self, predicate: predicate), result.count > 0 else {
+            return nil
+        }
+        let fromDate = date.lastWeek().timeIntervalSince1970
+        let toDate = date.timeIntervalSince1970
+        let objects: [CurrencyObject] = result.filter("date BETWEEN {%@, %@}", fromDate, toDate)
+                                              .sorted(byKeyPath: "date")
+                                              .map { $0 }
+        return objects
+    }
 }
 
 // MARK: - fetch API

@@ -31,6 +31,9 @@
 		04FE821127A53DBE00EC5334 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE821027A53DBE00EC5334 /* BaseTableViewCell.swift */; };
 		04FE821727A5A85400EC5334 /* CurrencyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE821627A5A85400EC5334 /* CurrencyHeaderView.swift */; };
 		04FE821A27A87C4C00EC5334 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE821927A87C4C00EC5334 /* UIColor+Hex.swift */; };
+		04FE821F27B11A7300EC5334 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE821E27B11A7300EC5334 /* ChartViewController.swift */; };
+		04FE822127B11A8200EC5334 /* ChartViewControllerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE822027B11A8200EC5334 /* ChartViewControllerVM.swift */; };
+		04FE822727B1239400EC5334 /* ChartAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE822627B1239400EC5334 /* ChartAxisValueFormatter.swift */; };
 		C3E7CA7674225685C51C2BE7 /* Pods_CurrencyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554EA28800065C7071AD120 /* Pods_CurrencyTests.framework */; };
 		EE23A91A63E36FD8EF142411 /* Pods_Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E934B5B63CFB44CFBD33DD /* Pods_Currency.framework */; };
 		EEABDAAA7DF34CEEB1DB65BD /* Pods_Currency_CurrencyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06016AC89A8952D933A2807 /* Pods_Currency_CurrencyUITests.framework */; };
@@ -82,6 +85,9 @@
 		04FE821027A53DBE00EC5334 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		04FE821627A5A85400EC5334 /* CurrencyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyHeaderView.swift; sourceTree = "<group>"; };
 		04FE821927A87C4C00EC5334 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		04FE821E27B11A7300EC5334 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		04FE822027B11A8200EC5334 /* ChartViewControllerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewControllerVM.swift; sourceTree = "<group>"; };
+		04FE822627B1239400EC5334 /* ChartAxisValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartAxisValueFormatter.swift; sourceTree = "<group>"; };
 		0554EA28800065C7071AD120 /* Pods_CurrencyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurrencyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3135AD098398750F1EFC5A0D /* Pods-Currency-CurrencyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency-CurrencyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Currency-CurrencyUITests/Pods-Currency-CurrencyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		37D33DB61118F1787E38AD48 /* Pods-Currency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency.release.xcconfig"; path = "Target Support Files/Pods-Currency/Pods-Currency.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				04FE821B27B11A0C00EC5334 /* Main */,
+				04FE821C27B11A1C00EC5334 /* Chart */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -283,6 +290,16 @@
 				04FE81E927A1BC5500EC5334 /* MainViewControllerVM.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		04FE821C27B11A1C00EC5334 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				04FE822627B1239400EC5334 /* ChartAxisValueFormatter.swift */,
+				04FE821E27B11A7300EC5334 /* ChartViewController.swift */,
+				04FE822027B11A8200EC5334 /* ChartViewControllerVM.swift */,
+			);
+			path = Chart;
 			sourceTree = "<group>";
 		};
 		34AC5F8CE60B3633795FE630 /* Pods */ = {
@@ -549,12 +566,15 @@
 			files = (
 				04FE820D27A53D7100EC5334 /* CurrencyCell.swift in Sources */,
 				04FE820127A2DDD200EC5334 /* CurrencyObject.swift in Sources */,
+				04FE822127B11A8200EC5334 /* ChartViewControllerVM.swift in Sources */,
+				04FE822727B1239400EC5334 /* ChartAxisValueFormatter.swift in Sources */,
 				04FE81FA27A1CE2C00EC5334 /* CurrencyModel.swift in Sources */,
 				04FE81ED27A1BDB600EC5334 /* ApiService.swift in Sources */,
 				04FE820627A2F7ED00EC5334 /* NetworkManager.swift in Sources */,
 				04FE81EA27A1BC5500EC5334 /* MainViewControllerVM.swift in Sources */,
 				04FE81FE27A2DA5200EC5334 /* DataAccessManager.swift in Sources */,
 				04B0EDC627A195120031B8C6 /* MainViewController.swift in Sources */,
+				04FE821F27B11A7300EC5334 /* ChartViewController.swift in Sources */,
 				04FE81F627A1CA7500EC5334 /* RealmDAO.swift in Sources */,
 				04FE821A27A87C4C00EC5334 /* UIColor+Hex.swift in Sources */,
 				04FE81E827A1BB9D00EC5334 /* BaseViewController.swift in Sources */,
