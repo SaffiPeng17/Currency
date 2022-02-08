@@ -6,7 +6,6 @@ The main page will show two days of average exchange rates recently. And if tap 
 
 <img src="https://raw.githubusercontent.com/SaffiPeng17/Currency/develop/readmeImages/main_view.png" width="300">&nbsp;&nbsp;<img src="https://raw.githubusercontent.com/SaffiPeng17/Currency/develop/readmeImages/charts_view.png" width="300">
 
-### Data updated
 First time open App will fetch a month of exchange rates from freeCurrencyAPI and store into database. The next time open the App, will fetch new exchange rates from last fetch date to today automatically, and update database.
 
 ## Data source
